@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Zerodha</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .right > div:hover {
+        color: rgb(72, 132, 223);
+      }
+      .btn {
+        background-color: rgb(1, 119, 193);
+      }
+      .btn:hover {
+        background-color: black;
+      }
+      #navbar {
+        display: flex;
+        position: fixed;
+        width: 75%;
+        height: 9%;
+        top: 0px;
+        background-color: white;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0px 200px;
+        box-shadow: 2px 1px 2px rgb(233, 230, 230);
+      }
+      li {
+        padding: 5px;
+      }
+      #logos > img {
+        filter: grayscale(100%);
+        opacity: 0.7;
+      }
+      #logos:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+      #sec3 > div {
+        padding: 18px;
+      }
+      #sec3 > div > h2 {
+        font-weight: 550;
+      }
+      #sec3 > div > p {
+        margin-top: 13px;
+        font-size: 20px;
+        font-weight: 200;
+        /* color: rgb(43, 43, 43); */
+      }
+      a {
+        font-size: 18px;
+        color: rgb(0, 132, 214);
+        text-decoration: none;
+      }
+      .hov > div > a {
+        font-size: 17px;
+      }
+      a:hover {
+        color: rgb(0, 0, 0) !important;
+      }
+      p {
+        color: rgb(61, 61, 61);
+        line-height: 1.5;
+      }
+      #sec8 > p {
+        font-size: 13px;
+        padding: 8px;
+      }
+      #sec8 > p > a {
+        font-size: 13px;
+      }
+      #sec7 > div > ul > li:hover,
+      #sec9 > p:hover {
+        cursor: pointer;
+        color: rgb(72, 132, 223);
+      }
+      .social > ul > .social1 > img {
+        width: 20px;
+        height: 20px;
+        filter: grayscale(100%);
+        margin: 10px 0px;
+      }
+      .social > ul > .t1 > img,
+      p:hover {
+        cursor: text;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="navbar">
+      <div style="padding: 26px; cursor: pointer">
+        <img src="/Img/logo.png" alt="logo" width="130px" />
+      </div>
+      <div>
+        <div
+          class="right"
+          style="
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            color: rgb(96, 93, 93);
+          "
+        >
+          <div style="padding: 24px; cursor: pointer">Signup</div>
+          <div style="padding: 24px; cursor: pointer">About</div>
+          <div style="padding: 24px; cursor: pointer">Products</div>
+          <div style="padding: 24px; cursor: pointer">Pricing</div>
+          <div style="padding: 24px; cursor: pointer">Support</div>
+          <div
+            style="
+              padding: 24px;
+              cursor: pointer;
+              font-size: 19px;
+              color: black;
+            "
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 1 -->
+    <div style="display: flex; justify-content: center; margin: 65px">
+      <img
+        src="/Img/landing.png"
+        alt=""
+        width="55%"
+        height="60%"
+        style="margin-top: 75px"
+      />
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: text;
+      "
+    >
+      <h1 style="font-size: 50px; font-weight: 550; color: rgb(57, 57, 57)">
+        Invest in everything
+      </h1>
+      <h2 style="color: rgb(43, 41, 41); padding: 20px; font-weight: 300">
+        Online platform to invest in stocks, derivatives, mutual funds, and more
+      </h2>
+      <button
+        class="btn"
+        style="
+          padding: 10px 30px;
+          margin: 30px;
+          font-size: 20px;
+          color: white;
+          cursor: pointer;
+          border-radius: 3px;
+          border: none;
+        "
+      >
+        Sign up now
+      </button>
+    </div>
+    <!-- Section 2 -->
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        gap: 130px;
+        margin: 100px 180px;
+      "
+    >
+      <div>
+        <img
+          src="/Img/largest-broker.jpg"
+          alt=""
+          width="430px"
+          height="300px"
+        />
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <div style="padding: 15px">
+          <h1>Largest stock broker in India</h1>
+        </div>
+        <div style="padding: 15px">
+          <p style="font-size: 20px">
+            1.5+ Crore Zerodha clients contribute to over 15% of all retail
+            order volumes in India daily by trading and investing in:
+          </p>
+        </div>
+        <div
+          style="display: flex; justify-content: space-between; padding: 15px"
+        >
+          <div style="display: flex; flex-direction: column; padding: 15px">
+            <ul style="font-size: 20px">
+              <li>Futures and Options</li>
+              <li>Commodity derivatives</li>
+              <li>Currency derivatives</li>
+            </ul>
+          </div>
+          <div style="display: flex; flex-direction: column; padding: 15px">
+            <ul style="font-size: 20px">
+              <li>Stocks & IPOs</li>
+              <li>Direct mutual funds</li>
+              <li>Bonds and Govt. Securities</li>
+            </ul>
+          </div>
+        </div>
+        <div id="logos" style="display: flex; justify-content: space-between">
+          <img
+            src="/Img/Economic times.png"
+            alt=""
+            width="25%"
+            height="12px"
+            style="margin-top: 14px"
+          />
+          <img
+            src="/Img/forbes.png"
+            alt=""
+            height="12px"
+            style="margin-top: 14px"
+          />
+          <img src="/Img/Business line.jpg" alt="" width="15%" height="40 px" />
+          <img src="/Img/The hindu.png" alt="" height="40px" width="100px" />
+          <img
+            src="/Img/live mint.png"
+            alt=""
+            height="35px"
+            style="margin-top: 2px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Section 3 -->
+    <div
+      style="display: flex; margin: 100px 180px; justify-content: space-between"
+    >
+      <div
+        id="sec3"
+        style="display: flex; flex-direction: column; margin: 20px"
+      >
+        <div style="margin-bottom: 20px">
+          <p style="font-size: 40px; font-weight: 500; color: black">
+            Trust with confidence
+          </p>
+        </div>
+        <div>
+          <h2>Customer-first always</h2>
+          <p>
+            That's why 1.5+ crore customers trust Zerodha with ₹4.5+ lakh crores
+            worth of equity investments.
+          </p>
+        </div>
+        <div>
+          <h2>No spam or gimmicks</h2>
+          <p>
+            No gimmicks, spam, "gamification", or annoying push notifications.
+            High quality apps that you use at your pace, the way you like.
+          </p>
+        </div>
+        <div>
+          <h2>The Zerodha universe</h2>
+          <p>
+            Not just an app, but a whole ecosystem. Our investments in 30+
+            fintech startups offer you tailored services specific to your needs.
+          </p>
+        </div>
+        <div>
+          <h2>Do better with money</h2>
+          <p>
+            With initiatives like <a href="">Nudge</a> and
+            <a href="">Kill Switch</a>, we don't just facilitate transactions,
+            but actively help you do better with your money.
+          </p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <div>
+          <img src="/Img/ecosystem.png" alt="" width="600px" height="550px" />
+        </div>
+
+        <div
+          class="hov"
+          style="display: flex; margin: 40px 10px 0px 130px; gap: 40px"
+        >
+          <div>
+            <a href="">
+              Explore our products
+              <i class="fa-solid fa-arrow-right" style="font-size: 15px"></i>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              Try kite demo
+              <i class="fa-solid fa-arrow-right" style="font-size: 15px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 4 -->
+    <div
+      style="
+        display: flex;
+        margin: 10px 200px;
+        gap: 40px;
+        color: rgb(53, 53, 53);
+      "
+    >
+      <div style="width: 50%">
+        <h1 style="font-size: 35px">Unbeatable pricing</h1>
+        <p style="font-size: 20px; margin: 30px 0px">
+          We pioneered the concept of discount broking and price transparency in
+          India. Flat fees and no hidden charges.
+        </p>
+        <a href="">
+          See pricing
+          <i class="fa-solid fa-arrow-right" style="font-size: 15px"></i>
+        </a>
+      </div>
+      <div style="display: flex; width: 50%">
+        <div
+          style="
+            border: 2px solid grey;
+            border-right: 1px solid grey;
+            padding: 20px;
+            width: 50%;
+            text-align: center;
+          "
+        >
+          <h1 style="font-size: 50px">₹0</h1>
+          <p style="margin-top: 30px; font-size: 20px">
+            Free equity delivery and direct mutual funds
+          </p>
+        </div>
+        <div
+          style="
+            border: 2px solid grey;
+            border-left: 1px solid grey;
+            padding: 20px;
+            width: 50%;
+            text-align: center;
+          "
+        >
+          <h1 style="font-size: 50px">₹20</h1>
+          <p style="margin-top: 30px; font-size: 20px">Intraday and F&O</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5-->
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        gap: 130px;
+        margin: 100px 180px;
+      "
+    >
+      <div>
+        <img
+          src="/Img/index-education.jpg"
+          alt=""
+          width="430px"
+          height="300px"
+        />
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <div style="padding: 15px">
+          <h1 style="font-weight: 400">Free and open market education</h1>
+        </div>
+        <div style="padding: 15px">
+          <p style="font-size: 20px; margin-bottom: 20px">
+            Varsity, the largest online stock market education book in the world
+            covering everything from the basics to advanced trading.
+          </p>
+          <a href="">
+            Varsity
+            <i class="fa-solid fa-arrow-right" style="font-size: 15px"></i>
+          </a>
+        </div>
+        <div style="padding: 15px">
+          <p style="font-size: 20px; margin-bottom: 20px">
+            Varsity, the largest online stock market education book in the world
+            covering everything from the basics to advanced trading.
+          </p>
+          <a href="">
+            TradingQ&A
+            <i class="fa-solid fa-arrow-right" style="font-size: 15px"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Section 6 -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: text;
+      "
+    >
+      <h1
+        style="
+          font-size: 40px;
+          font-weight: 500;
+          color: rgb(57, 57, 57);
+          margin-top: 70px;
+        "
+      >
+        Open a Zerodha account
+      </h1>
+      <p
+        style="
+          color: rgb(43, 41, 41);
+          font-size: 20px;
+          padding: 20px;
+          font-weight: 300;
+        "
+      >
+        Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O
+        trades.
+      </p>
+      <button
+        class="btn"
+        style="
+          padding: 10px 30px;
+          margin: 20px;
+          font-size: 20px;
+          color: white;
+          cursor: pointer;
+          border-radius: 3px;
+          border: none;
+        "
+      >
+        Sign up now
+      </button>
+    </div>
+    <div style="background-color: rgba(217, 217, 217, 0.193); margin: 0px">
+      <!-- Section 7 -->
+
+      <div
+        id="sec7"
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding: 15px;
+          margin: 100px 200px 10px 200px;
+        "
+      >
+        <div
+          class="social"
+          style="display: flex; flex-direction: column; padding: 15px"
+        >
+          <ul style="font-size: 20px" type="none">
+            <li class="t1">
+              <img
+                src="/Img/logo.png"
+                alt=""
+                width="150px"
+                height="20px"
+                style="margin-bottom: 10px"
+              />
+            </li>
+            <li class="t1">
+              <p style="font-size: 16px">
+                © 2010 - 2024, Zerodha Broking Ltd. <br />All rights reserved.
+              </p>
+            </li>
+            <li class="social1" style="display: flex; gap: 25px">
+              <img src="/Img/X logo.png" alt="" />
+              <img src="/Img/facebook logo.png" alt="" />
+              <img src="/Img/instagram logo.png" alt="" />
+              <img src="/Img/linkedin logo.png" alt="" />
+            </li>
+            <hr style="color: grey; opacity: 0.5" />
+            <li class="social1" style="display: flex; gap: 25px">
+              <img src="/Img/youtube logo.png" alt="" />
+              <img src="/Img/whatsapp logo.png" alt="" />
+              <img src="/Img/telegram logo.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; padding: 15px">
+          <ul style="font-size: 20px" type="none">
+            <h3 style="margin-bottom: 15px; padding: 3px">Company</h3>
+            <li>About</li>
+            <li>Products</li>
+            <li>Pricing</li>
+            <li>Referral programme</li>
+            <li>Careers</li>
+            <li>Zerodha.tech</li>
+            <li>Press & media</li>
+            <li>Zerodha Cares (CSR)</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; padding: 15px">
+          <ul style="font-size: 20px" type="none">
+            <h3 style="margin-bottom: 15px; padding: 3px">Support</h3>
+            <li>Contact us</li>
+            <li>Support portal</li>
+            <li>Z-Connect blog</li>
+            <li>List of charges</li>
+            <li>Downloads & resources</li>
+            <li>Videos</li>
+            <li>Market overview</li>
+            <li>How to file a complaint?</li>
+            <li>Status of your complaints</li>
+          </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; padding: 15px">
+          <ul style="font-size: 20px" type="none">
+            <h3 style="margin-bottom: 15px; padding: 3px">Account</h3>
+            <li>Open an account</li>
+            <li>Fund transfer</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Section 8 -->
+      <div id="sec8" style="margin: 0px 200px">
+        <p>
+          Zerodha Broking Ltd.: Member of NSE, BSE & MCX - SEBI Registration
+          no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
+          Broking Ltd.- SEBI Registration no.: IN-DP-431-2019 Commodity Trading
+          through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI
+          Registration no.: INZ000038238 Registered Address: Zerodha Broking
+          Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public
+          School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For
+          any complaints pertaining to securities broking please write to
+          <a href="">complaints@zerodha.com</a>, for DP related to
+          <a href="">dp@zerodha.com</a>. Please ensure you carefully read the
+          Risk Disclosure Document as prescribed by SEBI | ICF
+        </p>
+
+        <p>
+          Procedure to file a complaint on SEBI SCORES: Register on SCORES
+          portal. Mandatory details for filing complaints on SCORES: Name, PAN,
+          Address, Mobile Number, E-mail ID. Benefits: Effective Communication,
+          Speedy redressal of the grievances
+        </p>
+
+        <p>
+          <a href="">Smart Online Dispute Resolution</a> |
+          <a href="">Grievances Redressal Mechanism</a>
+        </p>
+
+        <p>
+          Investments in securities market are subject to market risks; read all
+          the related documents carefully before investing.
+        </p>
+
+        <p>
+          Attention investors: 1) Stock brokers can accept securities as margins
+          from clients only by way of pledge in the depository system w.e.f
+          September 01, 2020. 2) Update your e-mail and phone number with your
+          stock broker / depository participant and receive OTP directly from
+          depository on your e-mail and/or mobile number to create pledge. 3)
+          Check your securities / MF / bonds in the consolidated account
+          statement issued by NSDL/CDSL every month.
+        </p>
+
+        <p>
+          "Prevent unauthorised transactions in your account. Update your mobile
+          numbers/email IDs with your stock brokers. Receive information of your
+          transactions directly from Exchange on your mobile/email at the end of
+          the day. Issued in the interest of investors. KYC is one time exercise
+          while dealing in securities markets - once KYC is done through a SEBI
+          registered intermediary (broker, DP, Mutual Fund etc.), you need not
+          undergo the same process again when you approach another
+          intermediary." Dear Investor, if you are subscribing to an IPO, there
+          is no need to issue a cheque. Please write the Bank account number and
+          sign the IPO application form to authorize your bank to make payment
+          in case of allotment. In case of non allotment the funds will remain
+          in your bank account. As a business we don't give stock tips, and have
+          not authorized anyone to trade on behalf of others. If you find anyone
+          claiming to be part of Zerodha and offering such services, please
+          <a href="">create a ticket here</a>.
+        </p>
+      </div>
+      <div
+        id="sec9"
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 300px;
+        "
+      >
+        <p>NSE</p>
+        <p>BSE</p>
+        <p>MCX</p>
+        <p>Terms and conditions</p>
+        <p>Policies & procedures</p>
+        <p>Disclosure</p>
+        <p>For investor's attention</p>
+        <p>Investor charter</p>
+      </div>
+    </div>
+  </body>
+</html>
